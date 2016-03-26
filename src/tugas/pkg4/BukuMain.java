@@ -6,10 +6,9 @@ public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     BukuAlamat[] buku = new BukuAlamat[0];
     int i=0;
-    
     System.out.println("APLIKASI BUKU ALAMAT MORIS");
     for (int j = 1; j > 0; j++){
-        System.out.println("==========================");
+        System.out.println("=================================");
         System.out.println("\tMenu");
         System.out.println("1. Input Data");
         System.out.println("2. Edit Data");
@@ -18,7 +17,7 @@ public static void main(String[] args) {
         System.out.println("5. Exit");
         System.out.print("Masukkan pilihan anda : ");
         int pil = input.nextInt();
-        System.out.println("==========================");
+        System.out.println("================================");
         switch(pil){
             case 1 :
                 System.out.println("\t>>Input Data<<");
@@ -48,7 +47,7 @@ public static void main(String[] args) {
                 BukuAlamat.displayBuku(buku);
                 break;
             case 5 :
-                System.out.println("Terimakasih telah menggunakan Program ini . . . ");
+                System.out.println("Terimakasih telah menggunakan Program ini");
                 System.exit(0);
                 break;
             default :
